@@ -23,7 +23,6 @@ public class HomeController {
 
     @PostMapping("/posts")
     public void savePosts(@RequestBody PostsSaveRequestDto dto){
-        System.out.println(dto.toString());
         postsRepository.save(dto.toEntity());
     }
 }

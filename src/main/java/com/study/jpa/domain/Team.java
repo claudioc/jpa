@@ -16,7 +16,7 @@ import javax.persistence.Id;
 public class Team {
     @Id
     @GeneratedValue
-    private String id;
+    private Long id;
 
     @Column()
     private String name;
